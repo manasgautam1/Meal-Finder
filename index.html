@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Meal Finder</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="overlay">
+        <h1>Meal Finder</h1>
+        <div class="flex">
+          <form id="form">
+            <input type="text" id="meal" placeholder="Search for meals" />
+            <button class="btn search" id="searchMeal" type="submit">
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
+          <button class="btn random" id="randomMeal">
+            <i class="fas fa-random"></i>
+          </button>
+        </div>
+        <h2 id="searchResult"></h2>
+
+        <div id="mealByID"></div>
+        <div id="searchedMeal"></div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
